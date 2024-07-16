@@ -3,10 +3,10 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const backendUrl = import.meta.env.VITE_BACKEND_URL
+console.log(`Backend URL: ${backendUrl}`)
 
 export default function Login() {
 
-    const API_URL = JSON.stringify(import.meta.env["VITE_BACKEND_URL"])
     const [user, setUser] = useState({
         username: "",
         password: "",
